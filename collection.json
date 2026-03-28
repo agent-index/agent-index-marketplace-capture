@@ -1,0 +1,23 @@
+{
+  "name": "capture",
+  "display_name": "Capture",
+  "version": "1.0.0",
+  "description": "Personal capture and processing system. Quick-capture tasks, read-later content, ideas, and reference material into one unified registry. Organize with lists, tags, and contexts. Process your inbox and review what needs attention.",
+  "author": "agent-index",
+  "license": "proprietary",
+  "category": "personal-productivity",
+  "agent_index_min_version": "1.0.0",
+  "api": [
+    "capture",
+    "manage-items",
+    "manage-lists",
+    "review",
+    "daily-view",
+    "capture-tutorial"
+  ],
+  "dependencies": [],
+  "external_dependencies": [],
+  "eol_date": null,
+  "marketplace_url": "https://github.com/agent-index/agent-index-marketplace-capture",
+  "support_url": "https://agent-index.ai/support"
+}
