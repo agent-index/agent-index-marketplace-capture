@@ -1,7 +1,7 @@
 ---
 name: manage-items
 type: task
-version: 1.0.0
+version: 1.0.1
 collection: capture
 description: Full CRUD for captured items. View, filter, sort, update, complete, archive, delete, change type, add notes, and link items. Filter by type, list, tag, context, priority, status, or date range.
 stateful: false
@@ -37,7 +37,7 @@ On demand.
 
 ### Step 1: Load Registry
 
-Read `items.json` and `lists.json` from `/members/{member_hash}/capture/`.
+Read `items.json` and `lists.json` from the member's **local** capture directory: `members/{member_hash}/capture/`. Use native file tools (Read/Write), not `aifs_*` — capture data is local-first.
 
 If the member's intent is clear from their invocation (e.g., "mark CAP-012 as done," "show me my read-later items"), proceed directly to the appropriate action.
 

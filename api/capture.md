@@ -1,7 +1,7 @@
 ---
 name: capture
 type: task
-version: 1.0.0
+version: 1.0.1
 collection: capture
 description: Quick-capture entry point. Minimal friction — describe what you want to save and Claude structures it. Items land in the inbox by default or can be organized immediately.
 stateful: false
@@ -39,7 +39,9 @@ On demand, whenever something needs to be captured. This task should feel instan
 
 ### Step 1: Initialize
 
-Read `items.json` from `/members/{member_hash}/capture/`. If it doesn't exist, initialize:
+Read `items.json` from the member's **local** capture directory: `members/{member_hash}/capture/`. Use native file tools (Read/Write), not `aifs_*` — capture data is local-first and stays on the member's machine unless explicitly promoted to shared storage.
+
+If it doesn't exist, initialize:
 ```json
 {
   "last_updated": "{today}",

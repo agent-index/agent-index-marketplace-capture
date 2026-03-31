@@ -1,7 +1,7 @@
 ---
 name: manage-lists
 type: task
-version: 1.0.0
+version: 1.0.1
 collection: capture
 description: Create, edit, archive, and organize lists. Lists are user-defined containers for grouping items — "Home renovation," "Q2 planning," "Books 2026." Items with no list live in the inbox.
 stateful: false
@@ -27,7 +27,7 @@ The member describes what they want to do with lists.
 
 ### Outputs
 
-Updated `lists.json` in `/members/{member_hash}/capture/`.
+Updated `lists.json` in the member's local capture directory: `members/{member_hash}/capture/`.
 
 ### Cadence & Triggers
 
@@ -39,7 +39,9 @@ On demand.
 
 ### Step 1: Load Lists
 
-Read `lists.json` from `/members/{member_hash}/capture/`. If it doesn't exist, initialize:
+Read `lists.json` from the member's **local** capture directory: `members/{member_hash}/capture/`. Use native file tools (Read/Write), not `aifs_*` — capture data is local-first.
+
+If it doesn't exist, initialize:
 ```json
 {
   "last_updated": "{today}",

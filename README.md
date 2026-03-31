@@ -29,15 +29,17 @@ Personal capture and processing system for agent-index. Quick-capture tasks, rea
 
 ## Directory Structure
 
+Capture data is **local-first** — it lives on the member's machine under their local workspace, accessed via native file tools (Read/Write/Edit). Items are never written to the remote filesystem unless explicitly promoted to shared storage.
+
 ```
-/members/{hash}/capture/
-  items.json              ← master item registry
-  lists.json              ← list definitions
-  /attachments/           ← files attached to items
+members/{hash}/capture/          ← local, native file tools
+  items.json                     ← master item registry
+  lists.json                     ← list definitions
+  /attachments/                  ← files attached to items
     /{item-id}/
   /state/
-    current-context.md    ← rolling context for Claude
-    review-history.jsonl  ← log of review sessions
+    current-context.md           ← rolling context for Claude
+    review-history.jsonl         ← log of review sessions
 ```
 
 ## Item Lifecycle by Type
@@ -51,4 +53,4 @@ All items can be archived or deleted regardless of type.
 
 ## Version
 
-1.0.0
+1.0.1

@@ -1,7 +1,7 @@
 ---
 name: daily-view
 type: task
-version: 1.0.0
+version: 1.0.1
 collection: capture
 description: Quick synthesis of what needs attention today. Surfaces overdue items, today's due dates, high-priority tasks, and optionally the read-later queue and developing ideas.
 stateful: false
@@ -37,7 +37,7 @@ On demand. Typically once at the start of a work session. Can also be surfaced a
 
 ### Step 1: Load Registry
 
-Read `items.json` and `lists.json` from `/members/{member_hash}/capture/`.
+Read `items.json` and `lists.json` from the member's **local** capture directory: `members/{member_hash}/capture/`. Use native file tools (Read), not `aifs_*` — capture data is local-first.
 
 Apply scope filter if the member provided one.
 

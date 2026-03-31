@@ -1,7 +1,7 @@
 ---
 name: review
 type: task
-version: 1.0.0
+version: 1.0.1
 collection: capture
 description: Structured processing of the capture inbox and maintenance review of active items. Inbox processing organizes new captures. Maintenance review surfaces stale, overdue, and upcoming items that need attention.
 stateful: false
@@ -43,7 +43,7 @@ The member's configured review cadence determines how often Claude suggests a re
 
 ### Step 1: Load State
 
-Read `items.json`, `lists.json`, and `state/review-history.jsonl` from `/members/{member_hash}/capture/`.
+Read `items.json`, `lists.json`, and `state/review-history.jsonl` from the member's **local** capture directory: `members/{member_hash}/capture/`. Use native file tools (Read/Write), not `aifs_*` — capture data is local-first.
 
 Read the member's setup responses to know their configured review cadence and contexts.
 
