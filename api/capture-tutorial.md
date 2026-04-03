@@ -1,7 +1,7 @@
 ---
 name: capture-tutorial
 type: skill
-version: 1.0.0
+version: 1.0.1
 collection: capture
 description: Explains the capture collection to members — its concepts, workflows, and how to be productive with it — through a guided tour or targeted answers to specific questions.
 stateful: false
@@ -46,7 +46,7 @@ Seven topics in order. After each, check in.
 
 **Topic 1: What the capture collection does**
 
-The capture collection is one place for everything you need to track. Tasks to do, articles to read, podcasts to listen to, ideas to develop, reference material to keep — it all goes into one system. Instead of switching between a to-do app, a read-later service, a notes app, and bookmarks, you capture everything to Claude and organize it when you're ready.
+The capture collection is one place for everything you need to track. Tasks to do, articles to read, podcasts to listen to, ideas to develop, reference material to keep — it all goes into one system. Instead of switching between a to-do app, a read-later service, a notes app, and bookmarks, you capture everything to Claude and organize it when you're ready. All your capture data lives on your machine, not in cloud storage — giving you full privacy and control.
 
 The core principle is low-friction capture, structured processing. Getting something into the system should be instant — just describe it and it's saved. Organizing and prioritizing happens later, on your schedule, through a review process that helps you work through what you've collected.
 
@@ -94,13 +94,13 @@ The review has two modes. Inbox processing works through your unorganized items 
 
 Maintenance review scans your active items for things that need attention. Overdue tasks, items you haven't touched in weeks, ideas parked for months, articles queued forever. Claude surfaces these honestly: "This has been sitting here for two months — still worth tracking?"
 
-The suggested review cadence is a starting point. Some people review daily, some weekly. Find what works for you. The key is consistency — a five-minute daily review beats a painful monthly cleanup every time.
+The suggested review cadence is a starting point that's configurable during setup. Some people review daily, some weekly. Find what works for you. The key is consistency — a five-minute daily review beats a painful monthly cleanup every time.
 
 **Topic 6: The daily view**
 
 The daily view is your quick orientation. Run `@ai:daily-view` at the start of a work session and in 30 seconds you know: what's overdue, what's due today, what high-priority items need attention, and what you're currently working on.
 
-It also shows your context shortcuts — how many items you have at @deep-work, @quick-wins, etc. So when you know what kind of work session you're about to have, you can immediately filter to the right items.
+It also shows your context shortcuts — how many items you have at @deep-work, @quick-wins, etc. So when you know what kind of work session you're about to have, you can immediately filter to the right items. You can scope the view to specific lists or item types for a more focused look.
 
 The daily view doesn't change anything — it's read-only. It just shows you the lay of the land.
 
@@ -114,7 +114,7 @@ Review regularly means processing your inbox on a cadence that works for you, an
 
 Everything else — lists, tags, contexts, priorities — is in service of those two habits. Use as much or as little organization as helps you find things and decide what to work on. Some people use five lists and ten tags. Others use one list and no tags. The system adapts to you.
 
-After the tour: "Your main commands are `@ai:capture` to save things, `@ai:daily-view` to see what needs attention, `@ai:review` to process and maintain, and `@ai:manage-items` when you need full control. Questions about any of it?"
+After the tour: "Your main commands are `@ai:capture` to save things, `@ai:daily-view` to see what needs attention, `@ai:review` to process and maintain, `@ai:manage-lists` to organize your lists, and `@ai:manage-items` when you need full control. Questions about any of it?"
 
 ### Answering Specific Questions
 
