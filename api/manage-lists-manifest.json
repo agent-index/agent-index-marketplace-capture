@@ -1,0 +1,22 @@
+{
+  "name": "manage-lists",
+  "type": "task",
+  "display_name": "Manage Lists",
+  "collection": "capture",
+  "collection_version": "1.0.1",
+  "version": "1.0.1",
+  "eol_date": null,
+  "eol_warning_days": 60,
+  "stateful": false,
+  "produces_artifacts": false,
+  "produces_shared_artifacts": false,
+  "setup_template": "manage-lists-setup.md",
+  "dependency_status": "complete",
+  "missing_dependencies": [],
+  "parameter_provenance": {},
+  "dependencies": { "skills": [], "tasks": [] },
+  "external_dependencies": [],
+  "optional_external_dependencies": [],
+  "reads_from": null,
+  "writes_to": null
+}

@@ -1,7 +1,7 @@
 ---
 name: capture-collection-setup
 type: collection-setup
-version: 1.0.0
+version: 1.0.1
 collection: capture
 description: Org-admin setup interview for the Capture collection. Minimal configuration — this is an inherently personal tool.
 upgrade_compatible: true
@@ -54,3 +54,9 @@ This setup takes about one minute.
 
 ### Reset on Upgrade
 - None
+
+### Requires Member Attention
+None for PATCH/MINOR upgrades. MAJOR version upgrades will document required member actions here.
+
+### Migration Notes
+- v1.0 → future versions: migration notes will be added here as new MAJOR versions are published.

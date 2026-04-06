@@ -6,7 +6,7 @@
   "author": "agent-index",
   "license": "proprietary",
   "category": "personal-productivity",
-  "agent_index_min_version": "1.0.0",
+  "agent_index_min_version": "2.0.0",
   "api": [
     "capture",
     "manage-items",
