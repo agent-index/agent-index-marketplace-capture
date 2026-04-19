@@ -1,19 +1,19 @@
 {
   "name": "capture",
   "display_name": "Capture",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal capture and processing system. Quick-capture tasks, read-later content, ideas, and reference material into one unified registry. Organize with lists, tags, and contexts. Process your inbox and review what needs attention.",
   "author": "agent-index",
   "license": "proprietary",
   "category": "personal-productivity",
   "agent_index_min_version": "3.0.0",
   "api": [
-    "capture",
-    "manage-items",
-    "manage-lists",
-    "review",
-    "daily-view",
-    "capture-tutorial"
+    {"name":"capture","triggers":[{"phrase":"capture this","capability":"capture","description":"Quick-capture an item into your inbox"},{"phrase":"remember this","capability":"capture","description":"Save something for later processing"},{"phrase":"note this down","capability":"capture","description":"Record a quick note or thought"},{"phrase":"save this for later","capability":"capture","description":"Capture an item to process later"},{"phrase":"add to my inbox","capability":"capture","description":"Drop an item into the capture inbox"}]},
+    {"name":"manage-items","triggers":[{"phrase":"show my captured items","capability":"manage-items","description":"View and manage items in your capture registry"},{"phrase":"what have I captured","capability":"manage-items","description":"List captured items"},{"phrase":"manage my items","capability":"manage-items","description":"Organize, tag, or process captured items"}]},
+    {"name":"manage-lists","triggers":[{"phrase":"show my lists","capability":"manage-lists","description":"View and manage capture lists"},{"phrase":"create a list","capability":"manage-lists","description":"Create a new organizational list"},{"phrase":"organize my lists","capability":"manage-lists","description":"Manage capture list structure"}]},
+    {"name":"review","triggers":[{"phrase":"review my captures","capability":"review","description":"Process the capture inbox and review items"},{"phrase":"process my inbox","capability":"review","description":"Work through unprocessed captured items"},{"phrase":"what needs attention","capability":"review","description":"Surface items that need processing"}]},
+    {"name":"daily-view","triggers":[{"phrase":"daily view","capability":"daily-view","description":"Morning overview of items, tasks, and agenda"},{"phrase":"what's on my plate today","capability":"daily-view","description":"Show today's priorities and pending items"},{"phrase":"morning overview","capability":"daily-view","description":"Start-of-day summary of what needs attention"}]},
+    {"name":"capture-tutorial","triggers":[{"phrase":"how does capture work","capability":"capture-tutorial","description":"Learn how to use the capture system"},{"phrase":"capture tutorial","capability":"capture-tutorial","description":"Get a guided tour of capture features"}]}
   ],
   "dependencies": [],
   "external_dependencies": [],
