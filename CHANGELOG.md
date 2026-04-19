@@ -6,6 +6,13 @@ Format: [MAJOR.MINOR.PATCH] — YYYY-MM-DD
 
 ---
 
+## [1.0.2] — 2026-04-19
+
+### Added
+- **Natural language trigger phrases in `collection.json`.** API entries now include trigger arrays that map conversational phrases to capabilities, powering the routing layer introduced in agent-index-core 3.0.5. Members can say things like "capture this" or "what's on my plate today" instead of using `@ai:` alias syntax. Triggers are customizable per-member via `routing.json`.
+
+---
+
 ## [1.0.1] — 2026-03-31
 
 ### Fixed
