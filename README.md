@@ -53,4 +53,4 @@ All items can be archived or deleted regardless of type.
 
 ## Version
 
-1.0.1
+1.0.3

@@ -1,5 +1,12 @@
 # Capture — Changelog
 
+## [1.0.3] — 2026-06-06 — fleet docs hygiene (post-audit sweep)
+
+### Fixed (docs only)
+
+- README Version stanza corrected (was stale at 1.0.1).
+- All capability manifests re-stamped with the correct `collection_version` (preflight Check 2 compliance).
+
 All notable changes will be documented here.
 
 Format: [MAJOR.MINOR.PATCH] — YYYY-MM-DD
